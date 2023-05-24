@@ -14,4 +14,4 @@ let pokemonList = [
     height: 2,
     types: ['poison'],
   }, 
-]
+];
