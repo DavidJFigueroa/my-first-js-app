@@ -38,6 +38,13 @@ let pokemonRepository = (function () {
     button.innerText = pokemon.name;
     button.classList.add('pokemon-button');
     pokemonList.appendChild(button);
+    button.addEventListener('click', function () {
+      showDetails(pokemon);
+    });
+  }
+
+  function showDetails (pokemon) {
+    console.log(pokemon.name);
   }
 
   return {
