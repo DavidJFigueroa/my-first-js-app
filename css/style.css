@@ -1,10 +1,12 @@
-*{
+* {
   box-sizing: border-box;
   width: 100%;
+  margin: 0;
 }
 
 body {
   font-family: 'Bebas Neue', sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -22,6 +24,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 .listitem {
@@ -31,10 +34,9 @@ header {
 .pokemon-button {
   background-color: #fff200;
   border: 0.5rem solid rgb(255, 74, 228);
-  margin: 10px 30px 10px 30px;
+  margin: 10px;
   padding: 20px;
   font-family: inherit;
   font-size: 3rem;
-  width: 95vw;
- 
+  width: 99%;
 }
