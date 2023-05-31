@@ -2,6 +2,13 @@ body {
   font-family: 'Bebas Neue', sans-serif;
 }
 
+.pokemon-list {
+  display: flex;
+}
+
+.listitem {
+ list-style-type: none;
+}
 
 .pokemon-button {
   background-color: rgb(255, 242, 0);
