@@ -17,6 +17,13 @@ header {
 
 .logo {
   width: 20rem;
+  margin-top: 10px;
+}
+
+.ball{
+  width: 5rem;
+  margin-left: 30px;
+  margin-right:30px;
 }
 
 .pokemon-list {
@@ -33,7 +40,7 @@ header {
 
 .pokemon-button {
   background-color: #fff200;
-  border: 0.5rem solid rgb(255, 74, 228);
+  border: 0.5rem solid #ff4ae4;
   margin: 10px;
   padding: 20px;
   font-family: inherit;
