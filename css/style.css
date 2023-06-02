@@ -50,6 +50,7 @@ header {
   font-family: inherit;
   font-size: 3rem;
   width: 99%;
+  cursor: pointer;
 }
 
 #modal-container {
