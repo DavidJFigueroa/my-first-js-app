@@ -63,17 +63,17 @@ header img:hover {
 
 .listitem {
  list-style-type: none;
- width: 99%;
+ width: 100%;
 }
 
 .pokemon-button {
   background-color: var(--primary-color);
   border: 0.5rem solid var(--secondary-color);
-  margin: 10px 20px 10px 20px;
+  margin: 10px auto 10px auto;
   padding: 20px;
   font-family: inherit;
   font-size: 3rem;
-  width: 97%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -174,4 +174,22 @@ footer img:hover {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media screen and (max-width: 712px) {
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
+  .logo {
+    width: 10rem;
+    margin-top: 10px;
+  }
+  
+  .ball{
+    width: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
