@@ -88,9 +88,9 @@ let pokemonRepository = (function () {
       let contentElement2 = document.createElement('p');
       contentElement2.innerText = 'WEIGHT: ' + pokemon.weight;
       let typesElement = document.createElement('p');
-      for (let i = 0; i < pokemon.types.length; i++) {
-      typesElement.innerText = pokemon.types[i].type.name
-      }
+      typesElement.innerText = 'TYPES: ' + pokemon.types.map(getAllTypes).join(' & ');
+      function getAllTypes(item) {
+        return [item.type.name]}
       modal.appendChild(closeButtonElement);
       modal.appendChild(titleElement);
       modal.appendChild(imageElement);
