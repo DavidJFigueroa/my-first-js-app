@@ -64,6 +64,7 @@ header img:hover {
 .listitem {
  list-style-type: none;
  width: 100%;
+ text-align: center;
 }
 
 .pokemon-button {
@@ -73,12 +74,12 @@ header img:hover {
   padding: 20px;
   font-family: inherit;
   font-size: 3rem;
-  width: 100%;
+  width: 80%;
   cursor: pointer;
 }
 
 .pokemon-button:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   
   max-width: 99%;
 }
@@ -192,4 +193,10 @@ footer img:hover {
     margin-left: 20px;
     margin-right: 20px;
   }
+}
+
+@media screen and (min-width: 992px) {
+.pokemon-button {
+  max-width: 1000px;
+}
 }
