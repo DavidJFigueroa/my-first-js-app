@@ -79,9 +79,7 @@ header img:hover {
 }
 
 .pokemon-button:hover {
-  transform: scale(1.02);
-  
-  max-width: 99%;
+  transform: scale(1.03);
 }
 
 #modal-container {
