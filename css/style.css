@@ -52,21 +52,30 @@ header img:hover {
   margin-right: 50px;
 }
 
-.pokemon-list {
+.navbar {
+  justify-content: center;
+}
+
+.list-group {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.listitem {
+.list-group-item {
  list-style-type: none;
  text-align: center;
+ background-color: var(--background-color);
+ border: none;
+ padding: 0;
 }
 
-.pokemon-button {
+.btn{
   background-color: var(--primary-color);
   border: 0.5rem solid var(--secondary-color);
   margin: 10px auto 10px auto;
@@ -74,10 +83,10 @@ header img:hover {
   font-family: inherit;
   font-size: 3rem;
   cursor: pointer;
-  width: 90%;
+  width: 80%;
 }
 
-.pokemon-button:hover {
+.btn:hover {
   transform: scale(1.03);
 }
 
@@ -104,8 +113,11 @@ header img:hover {
   text-align: center;
 }
 
+.modal-header {
+  border: none;
+}
 
-.modal {
+.modal-content {
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
@@ -118,14 +130,8 @@ header img:hover {
   text-align: center;
 }
 
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: var(--text-color);
-  font-size: 20px;
-  font-weight: bold;
+span {
+  font-size: 4rem;
 }
 
 .modal h1 {
@@ -175,7 +181,19 @@ footer img:hover {
 }
 
 @media screen and (max-width: 412px) {
-  .pokemon-list {
+
+  .logo {
+    width: 12rem;
+    margin-top: 10px;
+  }
+  
+  .ball{
+    width: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .list-group {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -202,7 +220,7 @@ footer img:hover {
     margin-right: 20px;
   }
 
-  .pokemon-list {
+  .list-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -211,19 +229,19 @@ footer img:hover {
     padding: 0;
   }
 
-  .pokemon-button {
+  .btn{
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 712px) and (max-width:991px) {
-  .pokemon-button {
+  .btn{
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-.pokemon-button {
+.btn{
   max-width: 1000px;
 }
 }
