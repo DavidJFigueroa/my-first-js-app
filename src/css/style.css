@@ -77,6 +77,23 @@ header img:hover {
   justify-content: center;
 }
 
+.inputdiv {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#myInput {
+  background-color: white;
+  padding: 10px;
+  border-radius: 0.25rem;
+  border: 3px solid black;
+}
+
+#myInput:focus-visible {
+  border: 3px solid var(--secondary-color);
+  outline-color: black;
+}
+
 .list-group {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -211,6 +228,11 @@ footer img:hover {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  /* #myinput {
+    font-size: 12px;
+    width: 20%;
+  } */
 
   .list-group {
     display: grid;
