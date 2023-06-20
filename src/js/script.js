@@ -105,6 +105,18 @@ let pokemonRepository = (function () {
     }
   });
 
+  function sortByName() {
+    pokemonList.sort(function (a, b) {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
+  }
+
   return {
     add: add,
     getAll: getAll,
@@ -112,10 +124,12 @@ let pokemonRepository = (function () {
     loadList: loadList,
     loadDetails: loadDetails,
     showModal: showModal,
+    sortByName: sortByName,
   };
 })();
 
 pokemonRepository.loadList().then(function () {
+  pokemonRepository.sortByName();
   pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
   });
@@ -124,7 +138,7 @@ pokemonRepository.loadList().then(function () {
 $(document).ready(function () {
   $("#myInput").on("keyup", function () {
     var value = $(this).val().toLowerCase();
-    $("#pokeList li").filter(function () {
+    $(".list-group-item").filter(function () {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
   });
