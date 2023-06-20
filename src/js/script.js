@@ -130,7 +130,9 @@ $(document).ready(function () {
   });
 });
 
-$("#pagination-container").pagination({
+//pagination
+
+$("#pokelist").pagination({
   dataSource: pokemonRepository.addListItem(pokemon),
   pageSize: 5,
   autoHidePrevious: true,
@@ -138,6 +140,7 @@ $("#pagination-container").pagination({
   callback: function (data, pagination) {
     // template method of yourself
     var html = template(data);
-    $("#data-container").html(html);
+    $("#pokeList").html(html);
+    console.log(pagination);
   },
 });
