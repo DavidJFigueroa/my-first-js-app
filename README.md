@@ -1,6 +1,7 @@
 # Project Description:
 
-Simple Pokedex Application that fetches data from an API
+Simple Pokedex Application that fetches and paginates data from an API. 
+Allows user to search for pokemon.
 
 # Project API:
 
